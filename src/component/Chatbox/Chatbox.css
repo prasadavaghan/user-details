@@ -1,0 +1,82 @@
+/* Chatbox.css */
+
+.chatbox-container {
+    position: fixed;
+    bottom: 8%;
+    right: 16%;
+    background-color: #2196f3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 220px;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.chatbox-toggle {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.chatbox-title {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.arrow-icon {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.chatbox-content {
+    padding: 10px;
+}
+
+.chatbox-header {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.user-item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-item span {
+    font-size: 14px;
+    color: #333;
+}
+
+.view-all-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.view-all-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.open {
+    height: 160px;
+    /* Adjust the height as needed */
+}
