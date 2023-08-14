@@ -15,22 +15,22 @@ function User({ user }) {
                 </div>
                 <div className="user-data-section">
                     <h2>{name}</h2>
-                    <p>Username: {username}</p>
-                    <p>Email: {email}</p>
-                    <p>Phone: {phone}</p>
-                    <p>Website: {website}</p>
+                    <p>Username: <span>{username}</span></p>
+                    <p>Email: <span>{email}</span></p>
+                    <p>Phone: <span>{phone}</span></p>
+                    <p>Website: <span>{website}</span></p>
                     <h3>Company</h3>
-                    <p>Name: {companyName}</p>
-                    <p>Catchphrase: {catchPhrase}</p>
-                    <p>BS: {bs}</p>
+                    <p>Name: <span>{companyName}</span></p>
+                    <p>Catchphrase: <span>{catchPhrase}</span></p>
+                    <p>BS: <span>{bs}</span></p>
                 </div>
             </div>
             <div className="address-section">
-                <h3>Address</h3>
-                <p>Street: {street}</p>
-                <p>Suite: {suite}</p>
-                <p>City: {city}</p>
-                <p>Zipcode: {zipcode}</p>
+                <h3>Address :</h3>
+                <p>Street: <b>{street}</b></p>
+                <p>Suite: <b>{suite}</b></p>
+                <p>City: <b>{city}</b></p>
+                <p>Zipcode: <b>{zipcode}</b></p>
                 <div className="map">
                     <iframe
                         title="Location Map"

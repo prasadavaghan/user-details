@@ -61,12 +61,23 @@
     top: 70%;
     right: 1%;
     width: 15%;
-    background-color: #2196f3;
+    height: 60%;
+    background-color: white;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     padding: 8px;
     z-index: 1;
+    border-radius: 10px;
+}
+
+.horizontal-line {
+    width: 60%;
+    position: absolute;
+    bottom: 82%;
+    height: 1px;
+    right: 15%;
+    background-color: #000;
 }
 
 .dropdown span {

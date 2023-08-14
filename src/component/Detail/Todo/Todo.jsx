@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../../Navbar/Navbar";
-import "./Todo.css"; // Import the CSS file for the Posts component
+import "./Todo.css";
 import Chatbox from "../../Chatbox/Chatbox";
 import { useNavigate } from "react-router-dom";
 
@@ -10,7 +10,6 @@ function Todo() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const navigate = useNavigate();
     const handleLogout = () => {
-        // Clear the sessionStorage data and navigate to the home route
         sessionStorage.removeItem("selectedUser");
         navigate("/");
     };
@@ -29,6 +28,7 @@ function Todo() {
                     )}
                 </div>
             </div>
+            <span className="horizontal-line"></span>
             <div className="coming-soon">
                 <h1 className="coming-soon-title">Coming Soon</h1>
             </div>

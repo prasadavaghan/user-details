@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../../Navbar/Navbar";
-import "./Gallery.css"; // Import the CSS file for the Posts component
+import "./Gallery.css";
 import Chatbox from "../../Chatbox/Chatbox";
 import { useNavigate } from "react-router-dom";
 
@@ -29,6 +29,7 @@ function Gallery() {
                     )}
                 </div>
             </div>
+            <span className="horizontal-line"></span>
             <div className="coming-soon">
                 <h1 className="coming-soon-title">Coming Soon</h1>
             </div>
