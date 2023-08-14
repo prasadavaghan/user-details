@@ -19,8 +19,9 @@
     display: block;
     color: white;
     text-decoration: none;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     transition: color 0.3s ease;
+    font-size: 24px;
 }
 
 .navbar a:hover {
@@ -30,4 +31,39 @@
 .navbar .active {
     font-weight: bold;
     color: white;
+}
+
+.menu-icon {
+    display: none;
+    /* Hide by default on larger screens */
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+
+/* Media query for mobile screens */
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 10vh;
+        margin-top: -90%;
+    }
+    .menu-icon {
+        display: block;
+        /* Show the hamburger icon on mobile screens */
+    }
+    .nav-links {
+        display: none;
+        /* Hide the navigation links by default on mobile screens */
+    }
+    /* Show navigation links when the menu is open */
+    .navbar.open .nav-links {
+        display: block;
+    }
 }

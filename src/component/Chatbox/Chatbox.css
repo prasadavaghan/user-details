@@ -1,9 +1,7 @@
-/* Chatbox.css */
-
 .chatbox-container {
     position: fixed;
-    bottom: 8%;
-    right: 16%;
+    bottom: 2%;
+    right: 12%;
     background-color: #2196f3;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -23,7 +21,7 @@
 
 .chatbox-title {
     font-size: 16px;
-    color: #333;
+    color: wheat;
     margin: 0;
 }
 
@@ -62,7 +60,7 @@
 
 .user-item span {
     font-size: 14px;
-    color: #333;
+    color: white;
 }
 
 .view-all-link {
@@ -77,6 +75,17 @@
 }
 
 .open {
-    height: 160px;
-    /* Adjust the height as needed */
+    height: 40%;
+}
+
+.chat-icon {
+    width: 16px;
+    height: 16px;
+    fill: white;
+    margin-right: 5px;
+}
+
+.user-list-container {
+    max-height: 150px;
+    overflow-y: auto;
 }

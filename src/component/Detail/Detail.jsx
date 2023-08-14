@@ -25,11 +25,15 @@ function Detail() {
                     <span>{user.name}</span>
                     {isDropdownOpen && (
                         <div className="dropdown">
+                            <img src={user.profilepicture} alt={user.name} />
+                            <div>{user.name}</div>
                             <span onClick={handleLogout}>Logout</span>
                         </div>
                     )}
                 </div>
+
             </div>
+            <span className="horizontal-line"></span>
             <div className="details-content">
                 <User user={user} />
             </div>
